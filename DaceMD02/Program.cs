@@ -25,7 +25,9 @@ string lietotājaVecums = Console.ReadLine();
 int userNumber = int.Parse(lietotājaVecums);
 
 int nextYearAge = userNumber + 1;
-Console.WriteLine("Nākamgad Tev paliks " + nextYearAge + ", Tu esi pilngadīgs");
+bool isAdult = userNumber >= 18;
+Console.WriteLine($"Nākamgad Tev paliks { nextYearAge}, Tu esi pilngadīgs: {isAdult} " ); 
+
 
 Console.WriteLine(" =========================================");
 
